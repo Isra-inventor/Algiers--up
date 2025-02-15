@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8s.pt
-data: /content/My-First-Project-4/data.yaml
+data: /content/My-First-Project-6/data.yaml
 epochs: 500
 time: null
 patience: 100
