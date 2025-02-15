@@ -1,0 +1,196 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .details {
+            display: none;
+            margin-top: 10px;
+            transition: all 0.3s ease-in-out;
+            padding-left: 16px; /* Add padding for better alignment */
+        }
+        .details p {
+            margin-bottom: 8px; /* Add space between lines */
+            font-weight: 600; /* Make text bold */
+            color: #4a5568; /* Slightly darker text for better readability */
+        }
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-4">
+        <div class="flex items-center p-4">
+            <img alt="Profile picture of the manager" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/qNMn6Hxn9i5O8slzRTDWvDvAPIfPQVccGPMppcKIYpk.jpg" width="50"/>
+            <div class="ml-4">
+                <h2 class="text-lg font-semibold">Ramy RAMY</h2>
+                <p class="text-gray-500">Merchandiser</p>
+            </div>
+            <div class="ml-auto flex items-center">
+                <i class="fas fa-search text-gray-500 mr-4"></i>
+                <i class="fas fa-bars text-gray-500"></i>
+            </div>
+        </div>
+        <div class="p-4">
+            <h3 class="text-xl font-semibold mb-4">Store :</h3>
+            <div class="border border-blue-500 rounded-lg p-4 mb-4">
+                <div class="mb-4">
+                    <label class="block text-center text-gray-700 font-semibold mb-2">Choose a store :</label>
+                    <div class="relative">
+                        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                            <option>Store</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5H7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-4">
+                    <p class="text-gray-700 font-semibold">Take pictures for the shelves</p>
+                    <form action="/" method="post" enctype="multipart/form-data">
+                        <input type="file" name="file" required>
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-full mt-2 hover:bg-blue-600 transition duration-300" type="submit">Upload a picture</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Statistics :</h3>
+            <div class="border border-gray-300 rounded-lg p-4 mb-4">
+                {{detected_products}}
+            </br>
+            <h1>Percentages</h1>
+            {{p}}
+            {{o}}
+
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Suggestions</h3>
+            <div class="border border-gray-300 rounded-lg p-4 mb-4">
+                <p class="text-gray-700 font-semibold mb-2">What should be changed :</p>
+                {{result}}
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Report</h3>
+            <div class="border border-gray-300 rounded-lg p-4 mb-4">
+                <p class="text-gray-700 font-semibold mb-2">Write a report about the store</p>
+                <textarea class="w-full border border-gray-300 rounded-lg p-2 mb-4" placeholder="Input address"></textarea>
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">Submit report</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id, arrowId) {
+            var details = document.getElementById(id);
+            var arrow = document.getElementById(arrowId);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+                arrow.classList.add('rotate-180');
+            } else {
+                details.style.display = "none";
+                arrow.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .details {
+            display: none;
+            margin-top: 10px;
+            transition: all 0.3s ease-in-out;
+            padding-left: 16px; /* Add padding for better alignment */
+        }
+        .details p {
+            margin-bottom: 8px; /* Add space between lines */
+            font-weight: 600; /* Make text bold */
+            color: #4a5568; /* Slightly darker text for better readability */
+        }
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-4">
+        <div class="flex items-center p-4">
+            <img alt="Profile picture of the manager" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/qNMn6Hxn9i5O8slzRTDWvDvAPIfPQVccGPMppcKIYpk.jpg" width="50"/>
+            <div class="ml-4">
+                <h2 class="text-lg font-semibold">Ramy RAMY</h2>
+                <p class="text-gray-500">Merchandiser</p>
+            </div>
+            <div class="ml-auto flex items-center">
+                <i class="fas fa-search text-gray-500 mr-4"></i>
+                <i class="fas fa-bars text-gray-500"></i>
+            </div>
+        </div>
+        <div class="p-4">
+            <h3 class="text-xl font-semibold mb-4">Store :</h3>
+            <div class="border border-blue-500 rounded-lg p-4 mb-4">
+                <div class="mb-4">
+                    <label class="block text-center text-gray-700 font-semibold mb-2">Choose a store :</label>
+                    <div class="relative">
+                        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                            <option>Store</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5H7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-4">
+                    <p class="text-gray-700 font-semibold">Take pictures for the shelves</p>
+                    <form action="/" method="post" enctype="multipart/form-data">
+                        <input type="file" name="file" required>
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-full mt-2 hover:bg-blue-600 transition duration-300" type="submit">Upload a picture</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Statistics :</h3>
+            <div class="border border-gray-300 rounded-lg p-4 mb-4">
+                {{detected_products}}
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Suggestions</h3>
+            <div class="border border-gray-300 rounded-lg p-4 mb-4">
+                <p class="text-gray-700 font-semibold mb-2">What should be changed :</p>
+                {{result}}
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Report</h3>
+            <div class="border border-gray-300 rounded-lg p-4 mb-4">
+                <p class="text-gray-700 font-semibold mb-2">Write a report about the store</p>
+                <textarea class="w-full border border-gray-300 rounded-lg p-2 mb-4" placeholder="Input address"></textarea>
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">Submit report</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id, arrowId) {
+            var details = document.getElementById(id);
+            var arrow = document.getElementById(arrowId);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+                arrow.classList.add('rotate-180');
+            } else {
+                details.style.display = "none";
+                arrow.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
+>>>>>>> 47c62a28 (Initial commit)

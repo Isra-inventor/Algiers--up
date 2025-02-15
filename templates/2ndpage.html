@@ -1,0 +1,338 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Dashboard Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('.toggle-details');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+          const details = this.closest('.store-item').querySelector('.store-details');
+          if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+            this.classList.remove('fa-chevron-down');
+            this.classList.add('fa-chevron-up');
+          } else {
+            details.classList.add('hidden');
+            this.classList.remove('fa-chevron-up');
+            this.classList.add('fa-chevron-down');
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-4">
+    <div class="flex items-center p-4">
+      <img alt="Profile picture of the user" class="w-10 h-10 rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/qNMn6Hxn9i5O8slzRTDWvDvAPIfPQVccGPMppcKIYpk.jpg" width="40"/>
+      <div class="ml-3">
+        <p class="text-sm font-semibold">Ramy RAMY</p>
+        <p class="text-xs text-gray-500">Manager</p>
+      </div>
+      <div class="ml-auto flex items-center">
+        <i class="fas fa-search text-gray-500 mr-4"></i>
+        <i class="fas fa-bars text-gray-500"></i>
+      </div>
+    </div>
+    <div class="px-4 py-2">
+      <h2 class="text-lg font-semibold">Tasks :</h2>
+      <div class="bg-white rounded-lg shadow-md p-4 mt-2">
+        <h3 class="text-center font-semibold mb-2">Visit Stores</h3>
+        <div class="border rounded-lg overflow-hidden">
+          <!-- Store Item 1 -->
+          <div class="store-item p-4 border-b">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">baraki</p>
+                <p class="text-xs text-gray-500">superette mohamed</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+          <!-- Store Item 2 -->
+          <div class="store-item p-4 border-b">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">021231</p>
+                <p class="text-xs text-gray-500">superette youcef</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+          <!-- Store Item 3 -->
+          <div class="store-item p-4 border-b">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">021231</p>
+                <p class="text-xs text-gray-500">superette lotfi</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+          <!-- Store Item 4 -->
+          <div class="store-item p-4">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">021231</p>
+                <p class="text-xs text-gray-500">superette youcef</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="flex justify-between items-center">
+          <p class="text-sm font-semibold">VISIT STORES</p>
+          <p class="text-sm text-gray-500">VISITED/STORES <span class="font-semibold">4/6</span></p>
+        </div>
+        <div class="relative mt-2">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-blue-500 rounded-full" style="width: 66%;"></div>
+          </div>
+          <div class="absolute top-0 left-2/3 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gray-300 rounded-full"></div>
+        </div>
+      </div>
+      <div class="mt-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg p-4 text-center">
+        <p class="text-lg font-semibold">Already in a store?</p>
+        <button class="mt-2 bg-white text-blue-500 font-semibold py-2 px-4 rounded-full">Click here</button>
+      </div>
+    </div>
+  </div>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Dashboard Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('.toggle-details');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+          const details = this.closest('.store-item').querySelector('.store-details');
+          if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+            this.classList.remove('fa-chevron-down');
+            this.classList.add('fa-chevron-up');
+          } else {
+            details.classList.add('hidden');
+            this.classList.remove('fa-chevron-up');
+            this.classList.add('fa-chevron-down');
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-4">
+    <div class="flex items-center p-4">
+      <img alt="Profile picture of the user" class="w-10 h-10 rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/qNMn6Hxn9i5O8slzRTDWvDvAPIfPQVccGPMppcKIYpk.jpg" width="40"/>
+      <div class="ml-3">
+        <p class="text-sm font-semibold">Ramy RAMY</p>
+        <p class="text-xs text-gray-500">Manager</p>
+      </div>
+      <div class="ml-auto flex items-center">
+        <i class="fas fa-search text-gray-500 mr-4"></i>
+        <i class="fas fa-bars text-gray-500"></i>
+      </div>
+    </div>
+    <div class="px-4 py-2">
+      <h2 class="text-lg font-semibold">Tasks :</h2>
+      <div class="bg-white rounded-lg shadow-md p-4 mt-2">
+        <h3 class="text-center font-semibold mb-2">Visit Stores</h3>
+        <div class="border rounded-lg overflow-hidden">
+          <!-- Store Item 1 -->
+          <div class="store-item p-4 border-b">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">baraki</p>
+                <p class="text-xs text-gray-500">superette mohamed</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+          <!-- Store Item 2 -->
+          <div class="store-item p-4 border-b">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">021231</p>
+                <p class="text-xs text-gray-500">superette youcef</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+          <!-- Store Item 3 -->
+          <div class="store-item p-4 border-b">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">021231</p>
+                <p class="text-xs text-gray-500">superette lotfi</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+          <!-- Store Item 4 -->
+          <div class="store-item p-4">
+            <div class="flex items-center">
+              <i class="fas fa-store text-2xl text-gray-700"></i>
+              <div class="ml-3">
+                <p class="text-sm font-semibold">021231</p>
+                <p class="text-xs text-gray-500">superette youcef</p>
+              </div>
+              <i class="fas fa-chevron-down ml-auto text-gray-500 cursor-pointer toggle-details"></i>
+            </div>
+            <div class="store-details mt-2 hidden">
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">report</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Done</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Photos</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Took</span>
+              </div>
+              <div class="mt-2">
+                <p class="text-xs text-gray-500">Status</p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Visited</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="flex justify-between items-center">
+          <p class="text-sm font-semibold">VISIT STORES</p>
+          <p class="text-sm text-gray-500">VISITED/STORES <span class="font-semibold">4/6</span></p>
+        </div>
+        <div class="relative mt-2">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-blue-500 rounded-full" style="width: 66%;"></div>
+          </div>
+          <div class="absolute top-0 left-2/3 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gray-300 rounded-full"></div>
+        </div>
+      </div>
+      <div class="mt-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg p-4 text-center">
+        <p class="text-lg font-semibold">Already in a store?</p>
+        <button class="mt-2 bg-white text-blue-500 font-semibold py-2 px-4 rounded-full">Click here</button>
+      </div>
+    </div>
+  </div>
+</body>
+>>>>>>> 47c62a28 (Initial commit)
+</html>

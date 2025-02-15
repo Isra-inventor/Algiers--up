@@ -1,0 +1,6 @@
+flask
+roboflow
+ultralytics
+matplotlib
+google-generativeai
+image
